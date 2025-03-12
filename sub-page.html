@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind.config.js">
+    
+</head>
+<body class="bg-slate-200 max-w-screen-xl mx-auto ">
+    <section>
+        <div class="navbar bg-white pt-10">
+            <div class="navbar-start">
+                <img src="assets/logo.png" alt="">
+                <h1 class="text-3xl text-black">Dev <span class="font-bold">Board</span></h1>
+            </div>
+            
+            <div class="navbar-end">
+                <button id="Back" class="btn btn-primary font-bold text-white">Back to Desk</button>
+            </div>
+          </div>
+    </section>
+    <h1 class="pt-5 text-center font-bold text-2xl text-black">Blogs</h1>
+    <section class="pt-10">
+        <div class="p-4 bg-slate-100">
+            <p class=" font-bold text-black border-dotted border-gray-500 border-b-2">Question-1: What are the different ways to select an element in the DOM?</p>
+            <p class="text-gray-800">Select elements using ID, class, tag, name, or CSS selectors. </p>
+        </div><br>
+        <div class="p-4 bg-slate-100">
+            <p class=" font-bold text-black border-dotted border-gray-500 border-b-2">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            <p class="text-gray-800"> gets or sets HTML content, gets visible text, and all text, including hidden content, without formatting. </p>
+        </div><br>
+        <div class="p-4 bg-slate-100">
+            <p class=" font-bold text-black border-dotted border-gray-500 border-b-2">Question-3: What is event delegation in the DOM?</p>
+            <p class="text-gray-800">Event delegation allows a parent element to handle events for its child elements using a single listener, improving performance and efficiency. </p>
+        </div><br>
+        <div class="p-4 bg-slate-100">
+            <p class=" font-bold text-black border-dotted border-gray-500 border-b-2">Question-4: What is event bubbling in the DOM?</p>
+            <p class="text-gray-800">Event bubbling is when an event starts from the target element and propagates up to its ancestors, triggering their event handlers.</p>
+        </div><br>
+        <div class="p-4 bg-slate-100">
+            <p class=" font-bold text-black border-dotted border-gray-500 border-b-2">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <p class="text-gray-800">Create elements using a method, add them with an append method, and remove them with a remove method for dynamic content manipulation.</p>
+        </div>
+        
+    </section>
+
+    <script>
+        document.getElementById('Back').addEventListener('click',
+            function(){
+                window.location.href = 'index.html';
+            }
+        )
+    </script>
+</body>
+</html>

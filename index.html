@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="tailwind.config.js">
+</head>
+<body>
+    <section class="w-10/12 mx-auto">
+        <div class="navbar bg-base-100 shadow-sm ">
+            <div class="flex-1 flex gap-3 items-center">
+              <img src="assets/logo.png" alt="">
+              <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class="flex gap-10">
+              <div class="flex items-center gap-2">
+                <input class="size-4" type="checkbox" name="" id="">
+                <h1 id="count" class="text-lg font-extrabold">24</h1>
+              </div>
+              <!-- color palet -->
+               <div id="colors" onclick="changeBackground()">
+                <img src="assets/theme-btn.png" alt="">
+               </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="flex gap-3 w-10/12 mx-auto">
+      <section>
+        <div class="grid grid-cols-4 gap-5 mt-4">
+          <!-- 1st -->
+          <div class="flex bg-slate-200 gap-6 p-5 justify-center items-center rounded-md">
+            <input class="size-6" type="checkbox" name="" id="">
+            <div>
+              <p>Task Assigned</p>
+              <h1 id="task" class="font-extrabold">06</h1>
+            </div>
+          </div>
+          <!-- 2nd -->
+          <div id="Discover" class="flex gap-5 bg-violet-800 col-span-2 p-5 justify-center items-center rounded-md">
+            <img src="assets/board.png" alt="">
+            <p class="text-xl">Discover Something <br> New Today!</p>
+          </div>
+          <!-- 3rd -->
+          <div class="flex gap-6 bg-slate-200 p-5 justify-center items-center rounded-md">
+            <img src="assets/calender.png" alt="">
+            <p>Wed,<br>
+              <span class="font-bold">Jul 28 2025 </span></p>
+            
+          </div>
+
+        </div>
+
+        <!-- big cards -->
+         <div class="grid grid-cols-3 gap-3 mt-4 ">
+          <!-- Card -->
+          <div class="card w-auto bg-slate-100 shadow-xl">
+            <div class="card-body">
+              <p class="bg-white p-2 rounded-sm">ShopEase</p>
+              <h2 id="card-title-1" class="card-title">Fix Mobile Button Issue </h2>
+              <p class="bg-white p-2 rounded-sm">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                and ensure onClick works properly</p>
+              <div class="flex card-actions justify-between">
+                <div>
+                  <p>Deadline</p>
+                  <h2>21 March 2025</h2>
+                </div>
+                <button onclick="disable" id="btn-1" class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card w-auto bg-slate-100 shadow-xl">
+            <div class="card-body">
+              <p class="bg-white p-2 rounded-sm">CloudSync</p>
+              <h2 id="card-title-2" class="card-title">Add Dark Mode </h2>
+              <p class="bg-white p-2 rounded-sm">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+              <div class="flex card-actions justify-between">
+                <div>
+                  <p>Deadline</p>
+                  <h2>21 March 2025</h2>
+                </div>
+                <button onclick="disable" id="btn-2" class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3-->
+          <div class="card w-auto bg-slate-100 shadow-xl">
+            <div class="card-body">
+              <p class="bg-white p-2 rounded-sm">SwiftPay</p>
+              <h2 id="card-title-3" class="card-title">Optimize  Home page </h2>
+              <p class="bg-white p-2 rounded-sm">Improve speed, simplify design, enhance SEO, optimize images, ensure responsiveness.</p>
+              <div class="flex card-actions justify-between">
+                <div>
+                  <p>Deadline</p>
+                  <h2>21 March 2025</h2>
+                </div>
+                <button onclick="disable" id="btn-3" class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4-->
+          <div class="card w-auto bg-slate-100 shadow-xl">
+            <div class="card-body">
+              <p class="bg-white p-2 rounded-sm">Meta</p>
+              <h2 id="card-title-4" class="card-title">Add new emoji 🤲 </h2>
+              <p class="bg-white p-2 rounded-sm">Include meaningful, relevant, engaging, expressive, diverse, modern, accessible, visually appealing, context-appropriate, and user-friendly emojis.</p>
+              <div class="flex card-actions justify-between">
+                <div>
+                  <p>Deadline</p>
+                  <h2>21 March 2025</h2>
+                </div>
+                <button onclick="disable" id="btn-4" class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="card w-auto bg-slate-100 shadow-xl">
+            <div class="card-body">
+              <p class="bg-white p-2 rounded-sm">Google LLC</p>
+              <h2 id="card-title-5" class="card-title">Integrate OpenAI API  </h2>
+              <p class="bg-white p-2 rounded-sm">Connect API, authenticate, send requests, handle responses, optimize performance, ensure security, manage errors, test, deploy, monitor.</p>
+              <div class="flex card-actions justify-between">
+                <div>
+                  <p>Deadline</p>
+                  <h2>21 March 2025</h2>
+                </div>
+                <button onclick="disable" id="btn-5" class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="card w-auto bg-slate-100 shadow-xl">
+            <div class="card-body">
+              <p class="bg-white p-2 rounded-sm">Glassdoar</p>
+              <h2 id="card-title-6" class="card-title">Improve Job searching  </h2>
+              <p class="bg-white p-2 rounded-sm">Enhance networking, optimize resumes, use keywords, research companies, apply strategically, upgrade skills, stay updated, leverage referrals, follow up.</p>
+              <div class="flex card-actions justify-between">
+                <div>
+                  <p>Deadline</p>
+                  <h2>21 March 2025</h2>
+                </div>
+                <button onclick="disable" id="btn-6" class="btn btn-primary">Completed</button>
+              </div>
+            </div>
+          </div>
+         </div>
+      </section>
+
+      <section class="mt-4">
+        <div class="w-60 h-full bg-slate-200 justify-items-center rounded-md ">
+          <div class="flex justify-center pt-5 gap-2">
+            <img src="assets/activity.png" alt="">
+            <h1 class="font-bold">active log</h1>
+          </div>
+          <button onclick="remove()" class="btn btn-primary mt-3 mb-2 ">Clear History</button><hr> <br> 
+          <div id="history" class="p-3">
+            
+          </div>
+        </div>
+        
+      </section>
+    </section>
+
+
+      
+
+    <script src="script/script.js"></script>
+    <script src="script/utilities.js"></script>
+    
+    
+</body>
+</html>

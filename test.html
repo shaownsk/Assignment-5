@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind.config.js">
+</head>
+<body>
+    <div class="max-w-4xl w-full grid grid-cols-3 gap-4">
+        <!-- First Card -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">Card 1</h2>
+            <p class="text-gray-600">This is the first card.</p>
+        </div>
+        <!-- Middle Card (Double Width) -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center col-span-2">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">Card 2 (Wider)</h2>
+            <p class="text-gray-600">This card takes up twice the width of a normal card.</p>
+        </div>
+        <!-- Third Card -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">Card 3</h2>
+            <p class="text-gray-600">This is the third card.</p>
+        </div>
+    </div>
+</body>
+</html>
